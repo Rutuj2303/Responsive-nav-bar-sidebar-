@@ -1,0 +1,139 @@
+/* === IMPORTING A FONT FROM GOOGLE FONTS === */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("https://dlcdnwebimgs.asus.com/files/media/202507/24133466-cfbf-475b-973f-426d75741a75/images/Tablet-vs-Laptop-vs-Notebook_1200-x-628.jpg");
+    background-repeat: no-repeat; /*does not repeat img after change in dimension of screen*/
+    background-size: cover; /*takes entire img*/
+    background-position: center; /*focuses on center while being responsive*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 99.25vh;
+    z-index: 0;
+}
+
+
+nav {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.711);
+}
+
+nav ul {
+    list-style: none;       /*no bullet points*/
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    text-decoration: none;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover {
+    background-color: rgba(138, 134, 134, 0.597);
+    color: white;
+    border-radius: 10px;
+    border-left: 4px solid rgba(76, 70, 70, 0.553);
+    font-weight: bolder;
+}
+
+nav a:hover svg {
+    fill: white;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;      /*to make it start from the top*/
+    right: 0;    /*positioning it in the right side of screen*/
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.674);
+    height: 100vh;
+    width: 300px;
+    box-shadow: 3px 3px 5px black;
+    backdrop-filter: blur(7px);    /*for blur effect on sidebar*/
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar li {
+    width: 100%;
+    font-size: 18px;
+}
+
+.sidebar li:first-child:hover {
+    width: 30%;
+}
+
+.company {
+    font-family: 'DM Sans';
+    padding-left: 10px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.company:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.menu {
+    display: none;
+}
+
+.sidebar li {
+    border: 1px solid rgb(133, 133, 133);
+}
+
+ul li img {
+    width: 50px;
+    height: 50px;
+}
+
+/* === MEDIA QUERIES FOR TABLET AND MOBILE DEVICES === */
+@media (max-width: 900px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+

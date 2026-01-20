@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nav Bar</title>
+
+        <!-- === LINKING THE STYLE.CSS FILE TO HTML FILE === -->
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+        <!-- === SIDEBAR === -->
+        <nav>
+                <ul class="sidebar">
+
+                        <!-- === CLOSE MENU BUTTON === -->
+                        <li onclick="hideMenu()"><a href="#"><svg fill="black" xmlns="http://www.w3.org/2000/svg"
+                                                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                                                <path
+                                                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                                        </svg></a></li>
+
+                        <!-- === HOME BUTTON === -->
+                        <li><a href="#"><svg fill="black" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                                                <path
+                                                        d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+                                        </svg>&nbsp;Home</a></li>
+
+
+                        <!-- === ABOUT BUTTON === -->
+                        <li><a href="#"><svg fill="black" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                                                <path
+                                                        d="M480-680q17 0 28.5-11.5T520-720q0-17-11.5-28.5T480-760q-17 0-28.5 11.5T440-720q0 17 11.5 28.5T480-680Zm-40 320h80v-240h-80v240ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z" />
+                                        </svg>&nbsp;About</a></li>
+
+
+
+                        <!-- === SERVICES BUTTON === -->
+                        <li><a href="#"><svg fill="black" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                                                <path
+                                                        d="m422-232 207-248H469l29-227-185 267h139l-30 208ZM320-80l40-280H160l360-520h80l-40 320h240L400-80h-80Zm151-390Z" />
+                                        </svg>&nbsp;Services</a></li>
+
+                        <!-- === CONTACT BUTTON === -->
+                        <li><a href="#"><svg fill="black" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                                                <path
+                                                        d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+                                        </svg>&nbsp;Contact</a></li>
+
+
+                        <!-- === SETTINGS BUTTON === -->                
+                        <li><a href="#"><svg fill="black" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                                                <path
+                                                        d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z" />
+                                        </svg>&nbsp;Settings</a></li>
+                </ul>
+
+
+
+
+                <!-- === NAV BAR === -->
+                <ul>
+
+                        <!-- === WEBSITE/BRAND/COMPANY NAME === -->
+                        <li><a class="company" href="#"><img src="@Royal_Editz_2303.png"
+                                                alt="">&nbsp;&nbsp;Rutuj2303</a></li>
+
+                        <!-- === HOME BUTTON === -->                        
+                        <li class="hideOnMobile"><a href="#"><svg fill="black" xmlns="http://www.w3.org/2000/svg"
+                                                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                                                <path
+                                                        d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+                                        </svg>&nbsp;Home</a></li>
+
+
+                       <!-- === ABOUT BUTTON === -->                 
+                        <li class="hideOnMobile"><a href="#"><svg fill="black" xmlns="http://www.w3.org/2000/svg"
+                                                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                                                <path
+                                                        d="M480-680q17 0 28.5-11.5T520-720q0-17-11.5-28.5T480-760q-17 0-28.5 11.5T440-720q0 17 11.5 28.5T480-680Zm-40 320h80v-240h-80v240ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z" />
+                                        </svg>&nbsp;About</a></li>
+
+
+                        <!-- === SERVICES BUTTON === -->
+                        <li class="hideOnMobile"><a href="#"><svg fill="black" xmlns="http://www.w3.org/2000/svg"
+                                                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                                                <path
+                                                        d="m422-232 207-248H469l29-227-185 267h139l-30 208ZM320-80l40-280H160l360-520h80l-40 320h240L400-80h-80Zm151-390Z" />
+                                        </svg>&nbsp;Services</a></li>
+
+
+                        <!-- === CONTACT BUTTON === -->
+                        <li class="hideOnMobile"><a href="#"><svg fill="black" xmlns="http://www.w3.org/2000/svg"
+                                                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                                                <path
+                                                        d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+                                        </svg>&nbsp;Contact</a></li>
+
+
+                        <!-- === SETTINGS BUTTON === -->
+                        <li class="hideOnMobile"><a href="#"><svg fill="black" xmlns="http://www.w3.org/2000/svg"
+                                                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                                                <path
+                                                        d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z" />
+                                        </svg>&nbsp;Settings</a></li>
+
+                        <!-- === MENU BUTTON === -->
+                        <li class="menu" onclick="showMenu()"><a href="#"><svg fill="black"
+                                                xmlns="http://www.w3.org/2000/svg" height="24px"
+                                                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                                                <path
+                                                        d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                                        </svg></a></li>
+                </ul>
+        </nav>
+
+        <!-- === IMAGE LINK FROM INTERNET === -->
+        <!-- <img src="https://dlcdnwebimgs.asus.com/files/media/202507/24133466-cfbf-475b-973f-426d75741a75/images/Tablet-vs-Laptop-vs-Notebook_1200-x-628.jpg" alt=""> -->
+</body>
+
+<!-- === LINKING SCRIPT.JS FILE TO HTML FILE === -->
+<script src="script.js"></script>
+
+</html>
